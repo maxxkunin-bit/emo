@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2 — Мои увлечения</title>
+    <style>
+        :root {
+            --primary: #ef4444;
+            --primary-dark: #b91c1c;
+            --bg-color: #0a0a0a;
+            --card-bg: #141414;
+            --text-main: #f5f5f5;
+            --text-muted: #a3a3a3;
+            --border-color: #2a2a2a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        nav ul { display: flex; list-style: none; gap: 0.5rem; flex-wrap: wrap; }
+        nav a {
+            text-decoration: none;
+            color: var(--text-muted);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+        nav a:hover, nav a.active { background-color: var(--primary); color: white; }
+        main {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+            flex-grow: 1;
+            width: 100%;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.4);
+        }
+        .section-tag {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+        .image-container {
+            margin: 1.5rem 0 2rem 0;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+        .text-content p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+            color: #d4d4d4;
+            text-indent: 1.5rem;
+        }
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.65rem 1.25rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .btn:hover { background-color: var(--primary-dark); }
+        .btn-secondary { background-color: #262626; color: #d4d4d4; }
+        .btn-secondary:hover { background-color: #3a3a3a; }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        @media(max-width: 640px) {
+            h2 { font-size: 1.8rem; }
+            .card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Мои увлечения</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="page2.html" class="active">1. Dota 2</a></li>
+                    <li><a href="page3.html">2. Спорт и Активность</a></li>
+                    <li><a href="page4.html">Источники</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <span class="section-tag">Увлечение №1</span>
+            <h2>Dota 2: командная игра и любительский интерес</h2>
+
+            <div class="image-container" style="background: linear-gradient(135deg, #1a0505 0%, #000000 100%); padding: 3rem; text-align: center; color: #ef4444;">
+                <svg width="80" height="80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin: 0 auto 1rem auto; display: block;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12h4m-2-2v4m6-4h.01M18 12h.01M4 8h16a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4a2 2 0 012-2z"></path>
+                </svg>
+                <p style="color: #d4d4d4; font-weight: 500; font-size: 1.2rem;">Командная игра, тактика и любительский азарт</p>
+            </div>
+
+            <div class="text-content">
+                <p>
+                    Dota 2 — это командная стратегическая игра, в которой две команды по пять человек
+                    сражаются на карте и стараются разрушить главное здание противника. Я играю в неё
+                    на любительском уровне: не ставлю перед собой цель стать профессиональным
+                    киберспортсменом, а просто получаю удовольствие от процесса, общения с друзьями
+                    и возможности немного переключиться после учёбы.
+                </p>
+
+                <p>
+                    В Dota 2 мне нравится разнообразие героев и ролей, а также то, что каждая игра
+                    складывается по-разному. Здесь важно уметь договариваться с командой, слушать
+                    других, принимать решения и спокойно относиться к поражениям. Конечно, это не
+                    значит, что нужно проводить за игрой всё свободное время: важно соблюдать меру,
+                    делать перерывы и не забывать про школу, сон и другие дела.
+                </p>
+
+                <p>
+                    Мой совет другим игрокам-любителям: играйте в удовольствие, не ругайтесь с командой
+                    и не воспринимайте каждую ошибку как трагедию. Dota 2 — это прежде всего игра,
+                    а не работа. Если чувствуете, что начинаете злиться, лучше сделать паузу и вернуться
+                    позже. Тогда игра остаётся интересным хобби, а не источником стресса.
+                </p>
+            </div>
+
+            <div class="pagination">
+                <a href="index.html" class="btn btn-secondary">&larr; На главную</a>
+                <a href="page3.html" class="btn">Далее: Спорт &rarr;</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Школьный проект &bull; Кунин Максим (9А класс)</p>
+    </footer>
+</body>
+</html>
